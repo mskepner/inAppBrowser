@@ -15,10 +15,68 @@
         <script type="text/javascript" charset="utf-8" src="scripts/main.js"></script>
 	</head>
 	<body>
-		<header class="header">
-			<h1>InAppBrowser Sample</h1>
-		</header>
-		<div class="content">
+        
+        <!-- Home -->
+        <!--<div data-role="view" id="home" data-title="Optometry App" data-show="showCategories">-->
+        <div data-role="view" id="home" data-title="Optometry App" data-show="showCategories">
+            <header data-role="header">
+                <div data-role="navbar">
+                    <span data-role="view-title"></span>
+                </div>
+            </header>
+            <!--<ul id="categoryList" data-source="categoryData" data-endlessscroll="true" data-template="categoryTemplate" data-role="listview" data-style="inset">-->
+             <ul id="categoryList" data-endlessscroll="true" data-role="listview" data-style="inset">
+                 <li><a href="#category" class="km-listview-link" data-role="listview-link" data-transition="slide">Category A</a></li>
+                 <li><a href="#category" class="km-listview-link" data-role="listview-link" data-transition="slide">Category B</a></li>
+                 <li><a href="#category" class="km-listview-link" data-role="listview-link" data-transition="slide">Category C</a></li>
+            </ul>
+        </div>
+        
+        <!-- Category -->
+        <!--<div data-role="view" id="category" data-title="Optometry App" data-show="showSubcategories">-->
+        <div data-role="view" id="category" data-title="Optometry App" data-show="showSubcategories">
+            <!--<ul id="subcategoryList" data-source="subcategoryData" data-endlessscroll="true" data-template="categoryTemplate" data-role="listview" data-style="inset">-->
+            <ul id="subcategoryList" data-endlessscroll="true" data-role="listview" data-style="inset">
+                <li><a href="#subcategory" class="km-listview-link" data-role="listview-link" data-transition="slide">SubCategory 1</a></li>
+                <li><a href="#subcategory" class="km-listview-link" data-role="listview-link" data-transition="slide">SubCategory 2</a></li>
+                <li><a href="#subcategory" class="km-listview-link" data-role="listview-link" data-transition="slide">SubCategory 3</a></li>
+            </ul>
+        </div>
+        
+        <!-- Subcategory -->
+        <!--<div data-role="view" id="subcategory" data-title="Optometry App" data-show="showProducts">
+            <ul id="productList" data-source="productData" data-endlessscroll="true" data-template="productTemplate" data-role="listview" data-type="group" data-style="inset">-->
+        <div data-role="view" id="subcategory" data-title="Optometry App">
+            <ul id="productList" data-endlessscroll="true" data-role="listview" data-style="inset" data-type="group">
+                <li>
+                    Product A.1
+                    <ul>
+                        <li><a href="#" onclick="window.open('http://www.healio.com/~/media/Journals/JRS/2013/11_November/10_3928_1081597X_20131021_01/10_3928_1081597X_20131021_01.pdf', '_system');">Product Info</a></li>
+                        <li><a href="#" onclick="window.open('http://www.google.com', '_system');">Website</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div data-role="layout" data-id="default">
+            <header data-role="header">
+                <div data-role="navbar">
+                    <a class="nav-button" data-role="backbutton" data-align="left">Back</a>
+                    <span data-role="view-title"></span>
+                </div>
+            </header>
+            <!--View content will render here-->
+            <footer data-role="footer">
+                <div data-role="tabstrip">
+                    <a href="#home" data-icon="home">Home</a>
+                    <a href="#search" data-icon="search">Search</a>
+                    <a href="#bookmarks" data-icon="bookmarks">Bookmark</a>    
+                    <a href="#contactus" data-icon="action">Contact Us</a>    
+                </div> 
+            </footer>
+        </div>
+        
+		<!--<div class="content">
 			<div class="action-area ch80">
                 <a href="#" onclick="window.open('http://www.healio.com/~/media/Journals/JRS/2013/11_November/10_3928_1081597X_20131021_01/10_3928_1081597X_20131021_01.pdf', '_blank');">Inline Open External PDF</a>
                 <a href="#" onclick="window.open('http://alcon.com', '_blank');">Inline Open External PDF</a>
@@ -30,9 +88,9 @@
                 </div>
                 <div class="separator"></div>
             </div>
-		</div>
-		<footer class="footer">
-			<div>Cordova API Samples</div>
-		</footer>
+		</div>-->   
+        
+         <script src="scripts/app.js"></script>  
+        
 	</body>
 </html>

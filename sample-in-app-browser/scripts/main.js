@@ -1,4 +1,4 @@
-document.addEventListener("deviceready", onDeviceReady, false);
+/*document.addEventListener("deviceready", onDeviceReady, false);
 
 //Activate :active state
 document.addEventListener("touchstart", function() {
@@ -10,4 +10,4 @@ function onDeviceReady() {
 }
 
 function Application() {
-}
+}*/
